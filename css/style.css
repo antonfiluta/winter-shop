@@ -1,0 +1,6 @@
+@import url(./fonts.css);
+@import url(./virables.css);
+
+* {
+    font-family: var(--Grtsk);  
+}
