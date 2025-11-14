@@ -18,6 +18,8 @@
 
 .promo2 .promo2__img_wrapper img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .promo2 .promo2__img_wrapper .label {
@@ -50,4 +52,283 @@
     letter-spacing: -2%;
     text-align: center;
     color: #828282;
+}
+
+/* ========== АДАПТИВНОСТЬ ПРОМО-БЛОКА 2 ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .promo2 {
+        padding: 50px 120px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .promo2 {
+        padding: 40px 80px;
+        gap: 20px;
+    }
+    
+    .promo2 .promo2__img_wrapper {
+        height: 350px;
+    }
+    
+    .promo2__description {
+        width: 600px;
+    }
+    
+    .promo2__description h2 {
+        font-size: 19px;
+        line-height: 32px;
+    }
+    
+    .promo2__description p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .promo2 {
+        padding: 30px 40px;
+        gap: 20px;
+    }
+    
+    .promo2 .promo2__img_wrapper {
+        height: 300px;
+    }
+    
+    .promo2 .promo2__img_wrapper .label {
+        width: 60px;
+        height: 60px;
+        top: 25px;
+        left: 25px;
+    }
+    
+    .promo2__description {
+        width: 80%;
+        max-width: 500px;
+    }
+    
+    .promo2__description h2 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .promo2__description p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .promo2 {
+        padding: 25px 30px;
+        gap: 18px;
+    }
+    
+    .promo2 .promo2__img_wrapper {
+        height: 250px;
+    }
+    
+    .promo2 .promo2__img_wrapper .label {
+        width: 50px;
+        height: 50px;
+        top: 20px;
+        left: 20px;
+    }
+    
+    .promo2__description {
+        width: 85%;
+        max-width: 450px;
+    }
+    
+    .promo2__description h2 {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    
+    .promo2__description p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    .promo2 {
+        padding: 20px 20px;
+        gap: 15px;
+    }
+    
+    .promo2 .promo2__img_wrapper {
+        height: 200px;
+    }
+    
+    .promo2 .promo2__img_wrapper .label {
+        width: 40px;
+        height: 40px;
+        top: 15px;
+        left: 15px;
+    }
+    
+    .promo2__description {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    .promo2__description h2 {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+    }
+    
+    .promo2__description p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    .promo2 {
+        padding: 15px 15px;
+        gap: 12px;
+    }
+    
+    .promo2 .promo2__img_wrapper {
+        height: 180px;
+    }
+    
+    .promo2 .promo2__img_wrapper .label {
+        width: 35px;
+        height: 35px;
+        top: 12px;
+        left: 12px;
+    }
+    
+    .promo2__description {
+        width: 95%;
+        max-width: 350px;
+    }
+    
+    .promo2__description h2 {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    
+    .promo2__description p {
+        font-size: 11px;
+        line-height: 18px;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) and (min-width: 320px) {
+    .promo2 {
+        padding: 12px 10px;
+        gap: 10px;
+    }
+    
+    .promo2 .promo2__img_wrapper {
+        height: 150px;
+    }
+    
+    .promo2 .promo2__img_wrapper .label {
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .promo2__description {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .promo2__description h2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .promo2__description p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 340px) {
+    .promo2 .promo2__img_wrapper {
+        height: 140px;
+    }
+    
+    .promo2__description h2 {
+        font-size: 13px;
+    }
+    
+    .promo2__description p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+/* Для ландшафтной ориентации на мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    .promo2 {
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    
+    .promo2 .promo2__img_wrapper {
+        height: 120px;
+    }
+    
+    .promo2 .promo2__img_wrapper .label {
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .promo2__description {
+        width: 80%;
+    }
+    
+    .promo2__description h2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .promo2__description p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
+
+/* Альтернативный вариант для больших экранов - горизонтальное расположение */
+@media (min-width: 1024px) {
+    .promo2.horizontal-layout {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .promo2.horizontal-layout .promo2__img_wrapper {
+        width: 60%;
+        height: 400px;
+    }
+    
+    .promo2.horizontal-layout .promo2__description {
+        width: 35%;
+        align-items: flex-start;
+    }
+    
+    .promo2.horizontal-layout .promo2__description p {
+        text-align: left;
+    }
 }

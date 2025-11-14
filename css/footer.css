@@ -4,6 +4,7 @@ footer {
     overflow: hidden;
     padding: 179px 170px 50px 154px;
     color: white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, black 30%);
 }
 
 .footer__bg1 {
@@ -68,12 +69,10 @@ footer {
     height: 48px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0 25px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
     letter-spacing: -2%;
-
 }
 
 .footer__send_box div {
@@ -205,4 +204,422 @@ footer h3 {
     line-height: 100%;
     letter-spacing: 0%;
     color: #BDBDBD;
+}
+
+/* ========== АДАПТИВНОСТЬ ФУТЕРА ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    footer {
+        padding: 150px 120px 40px 120px;
+    }
+}
+
+/* 1200px - 1440px (ноутбуки) */
+@media (max-width: 1440px) and (min-width: 1200px) {
+    footer {
+        padding: 120px 80px 40px 80px;
+    }
+    
+    .footer__send_box {
+        width: 550px;
+    }
+}
+
+/* 1024px - 1199px (маленькие ноутбуки) */
+@media (max-width: 1199px) and (min-width: 1024px) {
+    footer {
+        padding: 100px 60px 40px 60px;
+    }
+    
+    .top__content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .footer__send_box {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .mid__content {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    
+    .mid__content > div {
+        flex: 1 1 calc(50% - 20px);
+        min-width: 250px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    footer {
+        padding: 80px 40px 30px 40px;
+    }
+    
+    .footer__content {
+        gap: 30px;
+    }
+    
+    .top__content {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .logo_box {
+        justify-content: center;
+    }
+    
+    .footer__send_box {
+        width: 100%;
+        max-width: 450px;
+        font-size: 14px;
+    }
+    
+    .mid__content {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .mid__content > div {
+        flex: 1 1 calc(50% - 15px);
+        min-width: 200px;
+    }
+    
+    .app_box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .app_box__content {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .qr_code {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .contact_box__item {
+        gap: 15px;
+    }
+    
+    .contact_box__item__content__title {
+        font-size: 16px;
+    }
+}
+
+/* 600px - 767px (большие телефоны) */
+@media (max-width: 767px) and (min-width: 600px) {
+    footer {
+        padding: 60px 30px 25px 30px;
+    }
+    
+    .footer__content {
+        gap: 25px;
+    }
+    
+    .top__content {
+        gap: 20px;
+    }
+    
+    .logo_part1 {
+        width: 45px;
+    }
+    
+    .logo_part2 {
+        width: 200px;
+    }
+    
+    .footer__send_box {
+        height: 42px;
+        font-size: 13px;
+        padding: 0 15px;
+    }
+    
+    .footer__send_box div {
+        gap: 10px;
+    }
+    
+    .mid__content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .mid__content > div {
+        width: 100%;
+    }
+    
+    footer h3 {
+        font-size: 15px;
+    }
+    
+    .app_box {
+        margin-top: 20px;
+    }
+    
+    .app_box__item {
+        padding: 8px 15px;
+    }
+    
+    .app_box__item__content__text {
+        font-size: 14px;
+    }
+    
+    .qr_code {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .contact_box {
+        margin-top: 20px;
+        gap: 15px;
+    }
+    
+    .footer__item ul {
+        margin-top: 15px;
+        gap: 15px;
+    }
+    
+    .bottom__content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .icons_box {
+        gap: 20px;
+    }
+}
+
+/* 426px - 599px (телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    footer {
+        padding: 50px 20px 20px 20px;
+    }
+    
+    .footer__content {
+        gap: 20px;
+    }
+    
+    .logo_box {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo_part1 {
+        width: 40px;
+    }
+    
+    .logo_part2 {
+        width: 180px;
+    }
+    
+    .footer__send_box {
+        height: 40px;
+        font-size: 12px;
+        padding: 0 12px;
+    }
+    
+    .footer__send_box div span {
+        font-size: 12px;
+    }
+    
+    .footer_send {
+        width: 18px;
+        height: 16px;
+    }
+    
+    .app_box__content {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .app_box__item {
+        justify-content: center;
+    }
+    
+    .contact_box__item {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .contact_box__item__img {
+        align-self: center;
+    }
+    
+    .footer__item ul {
+        gap: 12px;
+        font-size: 11px;
+    }
+    
+    .icons_box img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* 375px - 425px (маленькие телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    footer {
+        padding: 40px 15px 15px 15px;
+    }
+    
+    .footer__send_box div {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    
+    .footer__send_box div span {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    
+    .app_box {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .app_box__item {
+        padding: 6px 12px;
+    }
+    
+    .app_box__item__content__title {
+        font-size: 10px;
+    }
+    
+    .app_box__item__content__text {
+        font-size: 12px;
+    }
+    
+    .qr_code {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .contact_box__item__content__title {
+        font-size: 14px;
+    }
+    
+    .contact_box__item__content__text {
+        font-size: 11px;
+    }
+    
+    .bottom__content span {
+        font-size: 11px;
+    }
+}
+
+/* 320px - 374px (очень маленькие телефоны) */
+@media (max-width: 374px) and (min-width: 320px) {
+    footer {
+        padding: 30px 10px 10px 10px;
+    }
+    
+    .footer__content {
+        gap: 15px;
+    }
+    
+    .logo_part1 {
+        width: 35px;
+    }
+    
+    .logo_part2 {
+        width: 150px;
+    }
+    
+    .footer__send_box {
+        height: 35px;
+        font-size: 10px;
+        padding: 0 8px;
+    }
+    
+    .footer__send_box div span {
+        font-size: 10px;
+    }
+    
+    footer h3 {
+        font-size: 14px;
+    }
+    
+    .app_box__item {
+        padding: 5px 10px;
+    }
+    
+    .app_box__item__img {
+        width: 25px;
+    }
+    
+    .qr_code {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .contact_box__item__content__title {
+        font-size: 13px;
+    }
+    
+    .footer__item ul {
+        gap: 10px;
+        font-size: 10px;
+    }
+    
+    .icons_box {
+        gap: 15px;
+    }
+    
+    .icons_box img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 340px) {
+    .footer__send_box div span {
+        font-size: 9px;
+    }
+    
+    .app_box__item__content__text {
+        font-size: 11px;
+    }
+}
+
+/* Ландшафтная ориентация на мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    footer {
+        padding: 30px 20px 15px 20px;
+    }
+    
+    .top__content {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .logo_box {
+        flex-direction: row;
+    }
+    
+    .footer__send_box {
+        width: 300px;
+    }
+    
+    .mid__content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .mid__content > div {
+        flex: 1 1 calc(33.333% - 10px);
+    }
 }

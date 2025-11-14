@@ -26,6 +26,8 @@
 
 .slider1__item img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .slider1__item span {
@@ -44,4 +46,239 @@
     color: white;
     align-content: center;
     padding-left: 30px;
+}
+
+/* СТРЕЛКИ (ваши стили) */
+.arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 32px;
+    height: 98px;
+    z-index: 2;
+}
+
+.left {
+    left: 0;
+    padding-left: 8.71px;
+}
+
+.rigth {
+    right: 0;
+    padding-left: 13px;
+}
+
+/* ========== АДАПТИВНОСТЬ СЛАЙДЕРА ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .slider1__body {
+        padding: 0 120px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .slider1 {
+        height: 400px;
+    }
+    
+    .slider1__body {
+        padding: 0 80px;
+    }
+    
+    .slider1__item {
+        height: 400px;
+    }
+    
+    .slider1__item span {
+        height: 70px;
+        width: 500px;
+        font-size: 36px;
+        bottom: 60px;
+        padding-left: 25px;
+    }
+    
+    .arrow {
+        height: 80px;
+        width: 28px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .slider1 {
+        height: 350px;
+    }
+    
+    .slider1__body {
+        padding: 0 40px;
+    }
+    
+    .slider1__item {
+        height: 350px;
+    }
+    
+    .slider1__item span {
+        height: 60px;
+        width: 400px;
+        font-size: 28px;
+        bottom: 50px;
+        padding-left: 20px;
+    }
+    
+    .arrow {
+        height: 70px;
+        width: 25px;
+    }
+    
+    .arrow img {
+        width: 12px;
+        height: auto;
+    }
+    
+    .left {
+        padding-left: 6px;
+    }
+    
+    .rigth {
+        padding-left: 9px;
+    }
+}
+
+/* 426px - 767px (большие телефоны) */
+@media (max-width: 767px) and (min-width: 426px) {
+    .slider1 {
+        height: 280px;
+    }
+    
+    .slider1__body {
+        padding: 0 20px;
+    }
+    
+    .slider1__item {
+        height: 280px;
+    }
+    
+    .slider1__item span {
+        height: 50px;
+        width: 320px;
+        font-size: 22px;
+        bottom: 40px;
+        padding-left: 15px;
+    }
+    
+    .arrow {
+        height: 60px;
+        width: 22px;
+    }
+    
+    .arrow img {
+        width: 10px;
+        height: auto;
+    }
+    
+    .left {
+        padding-left: 5px;
+    }
+    
+    .rigth {
+        padding-left: 7px;
+    }
+}
+
+/* 320px - 425px (телефоны) */
+@media (max-width: 425px) and (min-width: 320px) {
+    .slider1 {
+        height: 200px;
+        margin: 15px 0;
+    }
+    
+    .slider1__body {
+        padding: 0 15px;
+    }
+    
+    .slider1__item {
+        height: 200px;
+    }
+    
+    .slider1__item span {
+        height: 40px;
+        width: 250px;
+        font-size: 16px;
+        bottom: 30px;
+        padding-left: 12px;
+    }
+    
+    .arrow {
+        height: 50px;
+        width: 20px;
+        display: none; /* На маленьких экранах скрываем стрелки */
+    }
+    
+    .arrow img {
+        width: 8px;
+        height: auto;
+    }
+    
+    .left {
+        padding-left: 4px;
+    }
+    
+    .rigth {
+        padding-left: 6px;
+    }
+    
+    /* Показываем стрелки только при наведении на мобильных */
+    .slider1:hover .arrow {
+        display: flex;
+    }
+}
+
+/* Дополнительные улучшения для очень маленьких экранов */
+@media (max-width: 360px) {
+    .slider1 {
+        height: 180px;
+    }
+    
+    .slider1__item {
+        height: 180px;
+    }
+    
+    .slider1__item span {
+        height: 35px;
+        width: 200px;
+        font-size: 14px;
+        bottom: 25px;
+        padding-left: 10px;
+    }
+    
+    .arrow {
+        height: 45px;
+        width: 18px;
+    }
+}
+
+/* Для ландшафтной ориентации на мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    .slider1 {
+        height: 250px;
+    }
+    
+    .slider1__item {
+        height: 250px;
+    }
+    
+    .slider1__item span {
+        height: 45px;
+        width: 300px;
+        font-size: 20px;
+        bottom: 35px;
+    }
+    
+    .arrow {
+        height: 65px;
+        width: 24px;
+    }
 }

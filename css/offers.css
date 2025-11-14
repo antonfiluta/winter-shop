@@ -1,10 +1,10 @@
-
 .offers {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 25px;
     margin-bottom: 60px;
+    padding: 0 20px;
 }
 
 .offer_body {
@@ -19,9 +19,9 @@
 }
 
 .offer_img {
-    flex-shrink: 0;
-    min-width: 668px;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .offer_content {
@@ -70,7 +70,6 @@
     text-align: center;
     align-content: center;
     border: none;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
@@ -97,4 +96,281 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .offer_body {
+        width: 600px;
+        height: 700px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .offer_body {
+        width: 500px;
+        height: 600px;
+    }
+    
+    .offer_content h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .offer_content p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .offer_content button {
+        width: 260px;
+    }
+    
+    .email_box {
+        width: 350px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .offers {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .offer_body {
+        width: 100%;
+        max-width: 600px;
+        height: 500px;
+    }
+    
+    .offer_content .first_img {
+        width: 120px;
+    }
+    
+    .offer_content .second_img {
+        width: 60px;
+    }
+    
+    .offer_content h3 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .offer_content p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .offer_content button {
+        width: 240px;
+        height: 45px;
+        font-size: 15px;
+    }
+    
+    .email_box {
+        width: 320px;
+        height: 45px;
+    }
+}
+
+/* 600px - 767px (большие телефоны) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .offers {
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 15px;
+    }
+    
+    .offer_body {
+        width: 100%;
+        max-width: 500px;
+        height: 400px;
+    }
+    
+    .offer_content .first_img {
+        width: 100px;
+    }
+    
+    .offer_content .second_img {
+        width: 50px;
+    }
+    
+    .offer_content h3 {
+        font-size: 22px;
+        line-height: 28px;
+        margin: 20px 0 12px 0;
+    }
+    
+    .offer_content p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .offer_content button {
+        width: 220px;
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .email_box {
+        width: 280px;
+        height: 45px;
+        font-size: 13px;
+    }
+}
+
+/* 426px - 599px (телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    .offers {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+    
+    .offer_body {
+        width: 100%;
+        max-width: 400px;
+        height: 350px;
+    }
+    
+    .offer_content .first_img {
+        width: 90px;
+    }
+    
+    .offer_content .second_img {
+        width: 45px;
+    }
+    
+    .offer_content h3 {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 15px 0 10px 0;
+    }
+    
+    .offer_content p {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .offer_content button {
+        width: 200px;
+        height: 42px;
+        font-size: 13px;
+    }
+    
+    .email_box {
+        width: 250px;
+        height: 42px;
+        font-size: 12px;
+    }
+}
+
+/* 375px - 425px (маленькие телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    .offers {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 8px;
+        margin-bottom: 30px;
+    }
+    
+    .offer_body {
+        width: 100%;
+        max-width: 350px;
+        height: 300px;
+    }
+    
+    .offer_content .first_img {
+        width: 80px;
+    }
+    
+    .offer_content .second_img {
+        width: 40px;
+    }
+    
+    .offer_content h3 {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 12px 0 8px 0;
+    }
+    
+    .offer_content p {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .offer_content button {
+        width: 180px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    .email_box {
+        width: 220px;
+        height: 40px;
+        font-size: 11px;
+        padding: 0 15px 0 10px;
+    }
+}
+
+/* 320px - 374px (очень маленькие телефоны) */
+@media (max-width: 374px) and (min-width: 320px) {
+    .offers {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 5px;
+        margin-bottom: 25px;
+    }
+    
+    .offer_body {
+        width: 100%;
+        max-width: 300px;
+        height: 250px;
+    }
+    
+    .offer_content .first_img {
+        width: 70px;
+    }
+    
+    .offer_content .second_img {
+        width: 35px;
+    }
+    
+    .offer_content h3 {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 10px 0 6px 0;
+    }
+    
+    .offer_content p {
+        font-size: 11px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .offer_content button {
+        width: 160px;
+        height: 38px;
+        font-size: 11px;
+    }
+    
+    .email_box {
+        width: 200px;
+        height: 38px;
+        font-size: 10px;
+        padding: 0 12px 0 8px;
+    }
+    
+    .email_box__content {
+        gap: 8px;
+    }
 }

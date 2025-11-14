@@ -105,3 +105,233 @@ header ul {
     line-height: 25px;
     letter-spacing: -2%;
 }
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .header__black,
+    .header__white,
+    .header__gray {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .header__black,
+    .header__white,
+    .header__gray {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .header__gray__opions {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .header__black,
+    .header__white,
+    .header__gray {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    /* Скрываем часть текста в черной шапке */
+    .header__black__rigth__options {
+        display: none;
+    }
+    
+    .header__black__rigth__options li {
+        gap: 8px;
+    }
+    
+    /* Уменьшаем меню в серой шапке */
+    .header__gray__opions {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 12px;
+    }
+    
+    /* Убираем текст в белой шапке справа, оставляем только иконки */
+    .header__white__right__opions {
+        display: none;
+    }
+    
+    .header__white__right__opions li {
+        height: auto;
+        flex-direction: row;
+        gap: 5px;
+    }
+}
+
+/* 426px - 767px (большие телефоны) */
+@media (max-width: 767px) and (min-width: 426px) {
+    .header__black,
+    .header__white,
+    .header__gray {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Скрываем правую часть черной шапки */
+    .header__black__rigth__options {
+        display: none;
+    }
+    
+    .header__black__left__options ul {
+        display: none;
+    }
+    
+    .header__black__left__options {
+        gap: 15px;
+    }
+    
+    /* Белая шапка - скрываем левое меню */
+    .header__white__left__opions {
+        display: none;
+    }
+    
+    .header__white {
+        justify-content: center;
+        position: relative;
+    }
+    
+    .header__white__right__opions {
+         display: none;
+    }
+    
+    .header__white__right__opions span {
+        display: none;
+    }
+    
+    .header__white__right__opions li {
+        height: auto;
+        flex-direction: row;
+        gap: 5px;
+    }
+    
+    .header__white__right__opions ul {
+        gap: 15px;
+    }
+    
+    /* Серая шапка - скрываем меню, показываем иконку бургер-меню */
+    .header__gray__opions {
+        display: none;
+    }
+    
+    .header__gray {
+        justify-content: center;
+        padding: 10px 20px;
+    }
+    
+    .header__gray::before {
+        content: "☰ Меню";
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+/* 320px - 425px (телефоны) */
+@media (max-width: 425px) and (min-width: 320px) {
+    .header__black,
+    .header__white,
+    .header__gray {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Черная шапка - оставляем только регион */
+    .header__black__rigth__options {
+        display: none;
+    }
+    
+    .header__black__left__options ul {
+        display: none;
+    }
+    
+    .header__black__left__options {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .header__black__region span span {
+        display: none;
+    }
+    
+    .header__black {
+        padding: 10px 15px;
+    }
+    
+    /* Белая шапка */
+    .header__white {
+        padding: 15px;
+        justify-content: space-between;
+    }
+    
+    .header__white__left__opions {
+        display: none;
+    }
+    
+    .header__white img {
+        width: 120px;
+        height: auto;
+    }
+    
+    .header__white__right__opions span {
+        display: none;
+    }
+    
+    .header__white__right__opions li {
+        height: auto;
+        flex-direction: row;
+        gap: 5px;
+    }
+    
+    .header__white__right__opions ul {
+        gap: 10px;
+    }
+    
+    /* Серая шапка - бургер-меню */
+    .header__gray__opions {
+        display: none;
+    }
+    
+    .header__gray {
+        justify-content: center;
+        padding: 8px 15px;
+    }
+    
+    .header__gray::before {
+        content: "☰";
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+/* Дополнительные улучшения для очень маленьких экранов */
+@media (max-width: 380px) {
+    .header__white {
+        padding: 10px 15px;
+    }
+    
+    .header__white img {
+        width: 100px;
+    }
+    
+    .header__white__right__opions ul {
+        gap: 8px;
+    }
+    
+    .header__white__right__opions img {
+        width: 18px;
+        height: 18px;
+    }
+}

@@ -13,3 +13,154 @@
 .brands img {
     width: 60px;
 }
+
+/* ========== АДАПТИВНОСТЬ БРЕНДОВ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .brands {
+        padding: 25px 120px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .brands {
+        padding: 20px 80px;
+    }
+    
+    .brands img {
+        width: 50px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .brands {
+        padding: 20px 40px;
+    }
+    
+    .brands ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    
+    .brands img {
+        width: 45px;
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .brands {
+        padding: 15px 30px;
+    }
+    
+    .brands ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .brands li {
+        flex: 0 0 calc(20% - 20px); /* 5 логотипов в ряд */
+    }
+    
+    .brands img {
+        width: 40px;
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    .brands {
+        padding: 15px 20px;
+    }
+    
+    .brands ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .brands li {
+        flex: 0 0 calc(25% - 15px); /* 4 логотипа в ряд */
+    }
+    
+    .brands img {
+        width: 35px;
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    .brands {
+        padding: 12px 15px;
+    }
+    
+    .brands ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    .brands li {
+        flex: 0 0 calc(33.333% - 12px); /* 3 логотипа в ряд */
+    }
+    
+    .brands img {
+        width: 30px;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) and (min-width: 320px) {
+    .brands {
+        padding: 10px 10px;
+    }
+    
+    .brands ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .brands li {
+        flex: 0 0 calc(33.333% - 10px); /* 3 логотипа в ряд */
+    }
+    
+    .brands img {
+        width: 28px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 340px) {
+    .brands ul {
+        gap: 8px;
+    }
+    
+    .brands li {
+        flex: 0 0 calc(33.333% - 8px);
+    }
+    
+    .brands img {
+        width: 25px;
+    }
+}
+
+/* Для ландшафтной ориентации на мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    .brands {
+        padding: 10px 20px;
+    }
+    
+    .brands ul {
+        gap: 15px;
+    }
+    
+    .brands img {
+        width: 35px;
+    }
+}

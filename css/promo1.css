@@ -37,3 +37,178 @@
     text-align: center;
     background-color: black;
 }
+
+/* ========== АДАПТИВНОСТЬ ПРОМО-БЛОКА ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .promo1__item {
+        width: calc(600px / 1680px * 100vw);
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .promo1 {
+        gap: 20px;
+        padding: 20px 0;
+    }
+    
+    .promo1__item {
+        width: calc(550px / 1440px * 100vw);
+    }
+    
+    .promo1__item__img_wrapper {
+        height: 220px;
+    }
+    
+    .promo1__item span {
+        padding: 18px 0;
+        font-size: 18px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .promo1 {
+        gap: 15px;
+        padding: 20px 15px;
+    }
+    
+    .promo1__item {
+        width: calc(48% - 7.5px);
+    }
+    
+    .promo1__item__img_wrapper {
+        height: 180px;
+    }
+    
+    .promo1__item span {
+        padding: 15px 0;
+        font-size: 16px;
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .promo1 {
+        gap: 12px;
+        padding: 15px 12px;
+    }
+    
+    .promo1__item {
+        width: calc(48% - 6px);
+    }
+    
+    .promo1__item__img_wrapper {
+        height: 160px;
+    }
+    
+    .promo1__item span {
+        padding: 12px 0;
+        font-size: 14px;
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    .promo1 {
+        gap: 10px;
+        padding: 15px 10px;
+    }
+    
+    .promo1__item {
+        width: calc(48% - 5px);
+    }
+    
+    .promo1__item__img_wrapper {
+        height: 140px;
+    }
+    
+    .promo1__item span {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    .promo1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 15px;
+    }
+    
+    .promo1__item {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .promo1__item__img_wrapper {
+        height: 150px;
+    }
+    
+    .promo1__item span {
+        padding: 12px 0;
+        font-size: 14px;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) and (min-width: 320px) {
+    .promo1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 10px;
+    }
+    
+    .promo1__item {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .promo1__item__img_wrapper {
+        height: 130px;
+    }
+    
+    .promo1__item span {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 340px) {
+    .promo1__item__img_wrapper {
+        height: 120px;
+    }
+    
+    .promo1__item span {
+        padding: 8px 0;
+        font-size: 11px;
+    }
+}
+
+/* Для ландшафтной ориентации на мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    .promo1 {
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+    
+    .promo1__item {
+        width: calc(50% - 5px);
+    }
+    
+    .promo1__item__img_wrapper {
+        height: 120px;
+    }
+    
+    .promo1__item span {
+        padding: 8px 0;
+        font-size: 12px;
+    }
+}
