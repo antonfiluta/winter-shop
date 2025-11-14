@@ -1,0 +1,53 @@
+.promo2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 50px calc(160px / 1680px * 100vw);
+}
+
+.promo2 .promo2__img_wrapper {
+    width: 100%;
+    height: 395px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.promo2 .promo2__img_wrapper img {
+    width: 100%;
+}
+
+.promo2 .promo2__img_wrapper .label {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 35px;
+    left: 35px;
+}
+
+.promo2__description {
+    width: calc(668px / 1680px * 100vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.promo2__description h2 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 35px;
+    letter-spacing: -2%;
+}
+
+.promo2__description p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: -2%;
+    text-align: center;
+    color: #828282;
+}
