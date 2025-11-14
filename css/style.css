@@ -14,3 +14,133 @@
     padding: 0;
     margin: 0;
 }
+
+.goods {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 75px calc(160px / 1680px * 100vw);
+}
+
+.goods__slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 50px 0 75px 0;
+}
+
+.goods__arrow {
+    position: absolute;
+}
+
+.goods__arrow.left {
+    left: -55px;
+    top: 166px;
+}
+
+.goods__arrow.right {
+    right: -55px;
+}
+
+.goods__item {
+    width: calc(320px / 1680px * 100vw);
+    position: relative;
+}
+
+.goods__item__img_wrapper {
+    width: 100%;
+    height: 370px;
+    width: 320px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9F9F9;
+}
+
+.goods__item img {
+    height: 270px;
+}
+
+.goods__item .info {
+    margin-top: 10px;
+}
+
+.goods__item .info .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -2%;
+    text-transform: uppercase;
+}
+
+.goods__item .info .type {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: -2%;
+    color: #828B8D;
+}
+
+.goods__item .info .price {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -2%;
+    text-transform: uppercase;
+}
+
+.goods__item .info .price__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.goods__item .info .price__wrapper .discaunted {
+    text-decoration: line-through;
+}
+
+.discaunted_price {
+    color: var(--red);
+}
+
+.goods__item .favorites_btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    border: 1px solid #F2F2F2;
+}
+
+.goods__item .favorites_btn.active {
+    background-color: black;
+}
+
+.goods__item .favorites_btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.goods__show_more_btn {
+    width: calc(322px / 1680px * 100vw);
+    height: 50px;
+    align-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -2%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+}
