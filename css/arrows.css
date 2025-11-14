@@ -1,0 +1,19 @@
+.arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 32px;
+    height: 98px;
+    z-index: 2;
+}
+
+.left {
+    left: 0;
+    padding-left: 8.71px;
+}
+
+.rigth {
+    right: 0;
+    padding-left: 13px;
+}
