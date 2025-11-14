@@ -1,0 +1,15 @@
+.brands {
+    padding: 25px calc(160px / 1680px * 100vw);
+    width: 100%;
+}
+
+.brands ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.brands img {
+    width: 60px;
+}

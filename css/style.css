@@ -3,6 +3,10 @@
 @import url(./header.css);
 @import url(./arrows.css);
 @import url(./slider1.css);
+@import url(./promo1.css);
+@import url(./brands.css);
+
+
 
 * {
     font-family: var(--Grtsk);  
@@ -10,4 +14,3 @@
     padding: 0;
     margin: 0;
 }
-
