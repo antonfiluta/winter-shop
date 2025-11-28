@@ -1,0 +1,40 @@
+.actions {
+    padding: 0 75px 0 75px;
+    width: 100%;
+}
+
+.actions__box {
+    display: flex;
+    gap: 30px;
+}
+
+.actions__item {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #F1F2F6;
+    position: relative;
+    border-radius: 8px;
+    border: 3px solid #4798DE;
+    border-radius: 10px;
+}
+
+.actions__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.actions__item h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+}

@@ -1,0 +1,15 @@
+.sub_slider {
+    padding: 0 75px 0 75px;
+    padding-top: 130px;
+    width: 100%;
+}
+
+.sub_slider__box {
+    display: flex;
+    gap: 30px;
+}
+
+.sub_slider__box img {
+    width: calc((1440 - 150 - 30)/(2*1440) * 100vw);
+    border-radius: 5px;
+}

@@ -1,0 +1,106 @@
+.about {
+    margin: 12px 0 42px 0;
+    padding: 3px 75px 0 75px;
+    width: 100%;
+    height: 505px;
+    background-image: url(../assets/images/content/back/Фон\ 3.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    align-items: center;
+    padding-right: 185px;
+}
+
+.about__left_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 65px;
+}
+
+.about__left_block__item {
+    display: flex;
+    flex-direction: column;
+    font-family: PT Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #6F7682;
+}
+
+.about__left_block__item .big {
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #6CDB7E;
+}
+
+.about__right_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 38px;
+}
+
+.about__right_block .heading {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #15244F;
+}
+
+.about__right_block__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.about__right_block__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about__right_block__item__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+
+.about__right_block__item__img img {
+    width: 65px;
+}
+
+.about__right_block__item__img img.special {
+    width: 40px;
+}
+
+.about__right_block__item__info {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+}
+
+.about__right_block__item__info h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #15244F;
+    margin-bottom: 10px;
+}
+
+.about__right_block__item__info p {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0%;
+    color: #6F7682;
+}
+

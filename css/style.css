@@ -6,7 +6,14 @@
 @import url(./news.css);
 @import url(./header.css);
 @import url(./menu.css);
-
+@import url(./main_slider.css);
+@import url(./stock.css);
+@import url(./offers.css);
+@import url(./brands.css);
+@import url(./sub_slider.css);
+@import url(./categories.css);
+@import url(./actions.css);
+@import url(./about.css);
 
 
 * {

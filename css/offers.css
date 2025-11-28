@@ -1,0 +1,245 @@
+.offers {
+    padding: 100px 75px 0 75px;
+}
+
+.offers__header {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.offers__header__categories {
+    width: 100%;
+    display: flex;
+}
+
+.offers__header__categories button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #F1F2F6;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #6F7682;
+    background-color: white;
+    width: 100%;
+    height: 61px;
+}
+
+.offers__header__categories button.checked {
+    background-color: #F1F2F6;
+    color: #4798DE;
+    font-weight: 700;
+}
+
+.offers__header__options {
+    background-color: #F1F2F6;
+    border-radius: 5px;
+    height: 61px;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    text-align: center;
+    align-items: center;
+    padding: 0 21px;
+    color: #6F7682;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.offers__header__options .checked {
+    color: #4798DE;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.offers__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.offers__item {
+    border: 1px solid #F1F2F6;
+    border-radius: 5px;
+    width: 300px;
+    height: 374px;
+}
+
+.offers__item.checked {
+    box-shadow: 1px 1px 4px 0 #4798DEB2;
+    height: auto;
+}
+
+.offers__item__img {
+    position: relative;
+    height: 225px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers__item__img img {
+    width: 100%;
+}
+
+#badimg1 {
+    width: 150px;
+}
+
+.offers__item__hit,
+.offers__item__new,
+.offers__item__stock {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #6CDB7E;
+    color: white;
+    font-family: PT Sans;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+    text-align: center;
+    align-content: center;
+    width: 102px;
+    height: 25px;
+    border-radius: 2px;
+}
+
+.offers__item__stock {
+    background-color: #ED85BF;
+    top: 45px;
+    width: 65px;
+}
+
+.offers__item__new {
+    background-color: #4798DE;
+}
+
+.offers__item__info {
+   padding: 0 30px 20px 30px; 
+   display: flex;
+   flex-direction: column;
+}
+
+.offers__item__info h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #6F7682;
+    margin-bottom: 15px;
+}
+
+.offers__item.checked .offers__item__info h3 {
+    color: #4798DE;
+}
+
+.offers__item__brand {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #6F7682;
+}
+
+.offers__item__availability {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4798DE;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.offers__item__price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #15244F;
+}
+
+.offer__buy {
+    margin-top: 20px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer__buy__btn {
+    background: #4798DE;
+    border: none;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-radius: 5px;
+}
+
+.offers__load-more {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4798DE;
+    margin: 0 auto;
+    display: block;
+    background-color: white;
+    border: 1px solid #4798DE;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.offers__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 50px;
+}
+
+.offers__head__title {
+    position: relative;
+    margin-left: 80px;
+}
+
+.offers__head__title h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #15244F;
+    position: absolute;
+    top: 64px;
+    left: 123px;
+    transform: translate(-50%, -50%);
+}
+
+.offers__head__title span {
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F1F2F6;
+}
