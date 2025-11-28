@@ -5,7 +5,6 @@ footer {
     gap: 140px;
 }
 
-
 .footer__info {
     display: flex;
     flex-direction: column;
@@ -21,7 +20,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 11px;
-
     font-family: PT Sans;
     font-weight: 400;
     font-size: 14px;
@@ -159,8 +157,6 @@ footer {
     background-color: #4798DE;
 }
 
-
-
 .to_top {
     border: none;
     width: 40px;
@@ -170,4 +166,432 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    footer {
+        gap: 100px;
+    }
+    
+    .footer__info {
+        padding: 37px 0px 0px 60px;
+    }
+    
+    .footer__content {
+        padding: 50px 100px 40px 0px;
+    }
+    
+    .footer__subscribe {
+        gap: 70px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    footer {
+        gap: 80px;
+    }
+    
+    .footer__info {
+        padding: 30px 0px 0px 40px;
+        gap: 30px;
+    }
+    
+    .footer__content {
+        padding: 40px 60px 30px 0px;
+        gap: 25px;
+    }
+    
+    .footer__subscribe {
+        gap: 50px;
+    }
+    
+    .footer__subscribe__box__input input {
+        width: 320px;
+    }
+    
+    .footer__subscribe__box__input p {
+        width: 300px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .footer__info {
+        padding: 30px 40px 0px 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    
+    .footer__info__box {
+        gap: 8px;
+    }
+    
+    .footer__content {
+        padding: 0px 40px 30px 40px;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .footer__nav {
+        gap: 40px;
+    }
+    
+    .footer__nav h3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .footer__nav ul {
+        gap: 10px;
+    }
+    
+    .footer__nav ul li,
+    .footer__nav ul li a {
+        font-size: 13px;
+    }
+    
+    .footer__subscribe {
+        width: 100%;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    
+    .footer__subscribe__box__input input {
+        width: 250px;
+        height: 36px;
+    }
+    
+    .footer__subscribe__box__input p {
+        width: 250px;
+        font-size: 11px;
+    }
+    
+    .footer__subscribe__box span {
+        width: 120px;
+        height: 36px;
+        font-size: 13px;
+    }
+    
+    .to_top {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    footer {
+        flex-wrap: wrap;
+    }
+    
+    .footer__info {
+        padding: 25px 30px 0px 30px;
+        gap: 25px;
+    }
+    
+    .footer__info img[alt="logo"] {
+        width: 160px;
+    }
+    
+    .footer__info__box {
+        font-size: 13px;
+    }
+    
+    .footer__info__box__social img {
+        width: 30px;
+    }
+    
+    .footer__info__box__pay div {
+        width: 45px;
+        height: 28px;
+    }
+    
+    .footer__info__box__pay img {
+        width: 35px;
+    }
+    
+    .footer__content {
+        padding: 0px 30px 25px 30px;
+        gap: 20px;
+    }
+    
+    .footer__nav {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .footer__nav > div {
+        flex: 1 1 calc(50% - 15px);
+        min-width: 180px;
+    }
+    
+    .footer__subscribe__box__input input {
+        width: 200px;
+        height: 34px;
+    }
+    
+    .footer__subscribe__box__input p {
+        width: 200px;
+    }
+    
+    .footer__subscribe__box span {
+        width: 100px;
+        height: 34px;
+        font-size: 12px;
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    footer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__info {
+        padding: 20px 20px 0px 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .footer__info__box__social,
+    .footer__info__box__pay {
+        justify-content: center;
+    }
+    
+    .footer__content {
+        padding: 0px 20px 20px 20px;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .footer__nav {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .footer__nav h3 {
+        font-size: 14px;
+    }
+    
+    .footer__nav ul li,
+    .footer__nav ul li a {
+        font-size: 12px;
+    }
+    
+    .footer__nav ul.with_icon li {
+        justify-content: center;
+    }
+    
+    .footer__subscribe {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .footer__subscribe__box {
+        width: 100%;
+        max-width: 300px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer__subscribe__box__input {
+        width: 100%;
+    }
+    
+    .footer__subscribe__box__input input {
+        width: 100%;
+        height: 36px;
+    }
+    
+    .footer__subscribe__box__input p {
+        width: 100%;
+        font-size: 11px;
+    }
+    
+    .footer__subscribe__box span {
+        width: 100%;
+        height: 36px;
+        font-size: 13px;
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    footer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__info {
+        padding: 15px 15px 0px 15px;
+        gap: 15px;
+    }
+    
+    .footer__info img[alt="logo"] {
+        width: 140px;
+    }
+    
+    .footer__info__box {
+        font-size: 12px;
+        gap: 6px;
+    }
+    
+    .footer__info__box__social img {
+        width: 28px;
+    }
+    
+    .footer__info__box__pay div {
+        width: 40px;
+        height: 25px;
+    }
+    
+    .footer__info__box__pay img {
+        width: 32px;
+    }
+    
+    .footer__content {
+        padding: 0px 15px 15px 15px;
+        gap: 15px;
+    }
+    
+    .footer__nav {
+        gap: 20px;
+    }
+    
+    .footer__nav h3 {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    .footer__nav ul {
+        gap: 8px;
+    }
+    
+    .footer__nav ul li,
+    .footer__nav ul li a {
+        font-size: 11px;
+    }
+    
+    .footer__subscribe__box__input input {
+        height: 34px;
+        font-size: 13px;
+    }
+    
+    .footer__subscribe__box__input p {
+        font-size: 10px;
+    }
+    
+    .footer__subscribe__box span {
+        height: 34px;
+        font-size: 12px;
+    }
+    
+    .to_top {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer__nav {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__subscribe {
+        display: none;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) and (min-width: 320px) {
+    footer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__info {
+        padding: 12px 10px 0px 10px;
+    }
+    
+    .footer__info img[alt="logo"] {
+        width: 120px;
+    }
+    
+    .footer__info__box {
+        font-size: 11px;
+    }
+    
+    .footer__info__box__social img {
+        width: 25px;
+    }
+    
+    .footer__info__box__pay div {
+        width: 35px;
+        height: 22px;
+    }
+    
+    .footer__info__box__pay img {
+        width: 28px;
+    }
+    
+    .footer__content {
+        padding: 0px 10px 12px 10px;
+    }
+    
+    .footer__nav h3 {
+        font-size: 12px;
+    }
+    
+    .footer__nav ul li,
+    .footer__nav ul li a {
+        font-size: 10px;
+    }
+    
+    .footer__nav ul.with_icon li {
+        gap: 10px;
+    }
+    
+    .footer__subscribe__box__input input {
+        height: 32px;
+        font-size: 12px;
+    }
+    
+    .footer__subscribe__box span {
+        height: 32px;
+        font-size: 11px;
+    }
+    
+    .to_top {
+        width: 32px;
+        height: 32px;
+    }
+
+     .footer__nav {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__subscribe {
+        display: none;
+    }
 }

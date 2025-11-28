@@ -26,6 +26,8 @@
 
 .news__item__img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .news__item__img button {
@@ -129,4 +131,356 @@
     line-height: 100%;
     letter-spacing: 0%;
     color: #F1F2F6;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .news {
+        padding: 0 60px 50px 60px;
+    }
+    
+    .head__bg {
+        right: -60px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .news {
+        padding: 0 40px 40px 40px;
+    }
+    
+    .head__bg {
+        right: -40px;
+    }
+    
+    .news__head__title {
+        margin-left: 60px;
+    }
+    
+    .news__head__title h2 {
+        font-size: 30px;
+        top: 54px;
+        left: 55px;
+    }
+    
+    .news__head__title span {
+        font-size: 90px;
+    }
+    
+    .news__box {
+        gap: 25px;
+    }
+    
+    .news__item__img {
+        height: 240px;
+    }
+    
+    .news__item__info {
+        padding: 18px 30px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .news {
+        padding: 0 30px 35px 30px;
+    }
+    
+    .head__bg {
+        right: -30px;
+    }
+    
+    .news__head__title {
+        margin-left: 50px;
+    }
+    
+    .news__head__title h2 {
+        font-size: 26px;
+        top: 46px;
+        left: 48px;
+    }
+    
+    .news__head__title span {
+        font-size: 75px;
+    }
+    
+    .news__box {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .news__item {
+        width: calc(50% - 10px);
+    }
+    
+    .news__item__img {
+        height: 200px;
+    }
+    
+    .news__item__img button {
+        width: 150px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    .news__item__info {
+        padding: 15px 25px;
+    }
+    
+    .news__item__info h3 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .news__item__info p {
+        font-size: 13px;
+    }
+    
+    .send_mesage__box span {
+        font-size: 14px;
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .news {
+        padding: 0 20px 30px 20px;
+    }
+    
+    .head__bg {
+        right: -20px;
+    }
+    
+    .news__head__title {
+        margin-left: 40px;
+    }
+    
+    .news__head__title h2 {
+        font-size: 22px;
+        top: 40px;
+        left: 40px;
+    }
+    
+    .news__head__title span {
+        font-size: 65px;
+    }
+    
+    .news__box {
+        gap: 15px;
+    }
+    
+    .news__item {
+        width: calc(50% - 8px);
+    }
+    
+    .news__item__img {
+        height: 180px;
+    }
+    
+    .news__item__img button {
+        width: 130px;
+        height: 34px;
+        font-size: 13px;
+    }
+    
+    .news__item__info {
+        padding: 12px 20px;
+    }
+    
+    .news__item__info h3 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    
+    .news__item__info p {
+        font-size: 12px;
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    .news {
+        padding: 0 15px 25px 15px;
+    }
+    
+    .head__bg {
+        display: none; /* Скрываем фоновое изображение на мобильных */
+    }
+    
+    .news__head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .news__head__title {
+        margin-left: 35px;
+    }
+    
+    .news__head__title h2 {
+        font-size: 20px;
+        top: 36px;
+        left: 35px;
+    }
+
+    .head__bg {
+        display: none;
+    }
+    
+    .news__head__title span {
+        font-size: 55px;
+    }
+    
+    .news__box {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .news__item {
+        width: 100%;
+    }
+    
+    .news__item__img {
+        height: 200px;
+    }
+    
+    .news__item__img button {
+        width: 140px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    .news__item__info {
+        padding: 15px 25px;
+    }
+    
+    .send_mesage {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .send_mesage__box {
+        padding: 4px 18px;
+    }
+    
+    .send_mesage__box span {
+        font-size: 14px;
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) {
+    .news {
+        padding: 0 12px 20px 12px;
+    }
+    
+    .news__head__title {
+        margin-left: 30px;
+    }
+
+    .head__bg {
+        display: none; /* Скрываем фоновое изображение на мобильных */
+    }
+    
+    .news__head__title h2 {
+        font-size: 18px;
+        top: 32px;
+        left: 30px;
+    }
+    
+    .news__head__title span {
+        font-size: 44px;
+    }
+
+    .news__box {
+        flex-direction: column;
+    }
+    
+    .news__item__img {
+        height: 180px;
+    }
+    
+    .news__item__img button {
+        width: 120px;
+        height: 32px;
+        font-size: 12px;
+    }
+    
+    .news__item__info {
+        padding: 12px 20px;
+    }
+    
+    .news__item__info h3 {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    .news__item__info p {
+        font-size: 11px;
+    }
+    
+    .send_mesage__box {
+        padding: 3px 15px;
+    }
+    
+    .send_mesage__box span {
+        font-size: 13px;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) {
+    .news {
+        padding: 0 10px 15px 10px;
+    }
+    
+    .news__head__title {
+        margin-left: 25px;
+    }
+    
+    .news__head__title h2 {
+        font-size: 16px;
+        top: 28px;
+        left: 25px;
+    }
+    
+    .news__head__title span {
+        font-size: 42px;
+    }
+    
+    .news__item__img {
+        height: 160px;
+    }
+    
+    .news__item__img button {
+        width: 110px;
+        height: 30px;
+        font-size: 11px;
+    }
+    
+    .news__item__info {
+        padding: 10px 15px;
+    }
+    
+    .news__item__info h3 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .news__item__info p {
+        font-size: 10px;
+    }
+    
+    .send_mesage__box {
+        padding: 2px 12px;
+        gap: 8px;
+    }
+    
+    .send_mesage__box span {
+        font-size: 12px;
+    }
 }

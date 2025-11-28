@@ -70,8 +70,9 @@
 .offers__item {
     border: 1px solid #F1F2F6;
     border-radius: 5px;
-    width: 300px;
+    width: calc(300px / 1440px * 100vw);
     height: 374px;
+    flex-shrink: 0;
 }
 
 .offers__item.checked {
@@ -210,6 +211,7 @@
     width: 140px;
     height: 40px;
     border-radius: 5px;
+    margin-top: 30px;
 }
 
 .offers__head {
@@ -242,4 +244,422 @@
     line-height: 100%;
     letter-spacing: 0%;
     color: #F1F2F6;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .offers {
+        padding: 80px 60px 0 60px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .offers {
+        padding: 70px 40px 0 40px;
+    }
+
+    .offers__item:nth-child(4n) {
+        display: none;
+    }
+    
+    .offers__content {
+        gap: 20px;
+    }
+    
+    .offers__item,
+    .offers__item.checked {
+        width: 270px;
+    }
+    
+    .offers__header__options {
+        gap: 40px;
+        padding: 0 15px;
+        font-size: 13px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .offers {
+        padding: 60px 30px 0 30px;
+    }
+    
+    .offers__item:nth-child(4n),
+    .offers__item:nth-child(3n) {
+        display: none;
+    }
+    
+    .offers__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .offers__item,
+    .offers__item.checked {
+        width: calc(50% - 10px);
+        max-width: 280px;
+    }
+    
+    .offers__header__options {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+    
+    .offers__header__options span {
+        flex: 0 0 auto;
+    }
+    
+    .offers__head__title {
+        margin-left: 60px;
+    }
+    
+    .offers__head__title h2 {
+        font-size: 28px;
+        top: 54px;
+        left: 100px;
+    }
+    
+    .offers__head__title span {
+        font-size: 90px;
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .offers {
+        padding: 50px 20px 0 20px;
+    }
+
+    .offers__head {
+        display: none;
+    }
+
+    .offers__item:nth-child(4n),
+    .offers__item:nth-child(3n) {
+        display: none;
+    }
+    
+    .offers__header__categories {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .offers__header__categories button {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .offers__header__options {
+        display: none;
+    }
+    
+    .offers__content {
+        gap: 15px;
+    }
+    
+    .offers__item,
+    .offers__item.checked {
+        width: calc(50% - 8px);
+        max-width: 250px;
+    }
+    
+    .offers__item__info {
+        padding: 0 20px 15px 20px;
+    }
+    
+    .offer__buy__btn {
+        width: 120px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    .offers__head__title {
+        margin-left: 40px;
+    }
+    
+    .offers__head__title h2 {
+        font-size: 24px;
+        top: 46px;
+        left: 85px;
+    }
+    
+    .offers__head__title span {
+        font-size: 75px;
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    .offers {
+        padding: 40px 15px 0 15px;
+    }
+    
+    .offers__header__categories {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .offers__header__categories button {
+        height: 45px;
+        font-size: 13px;
+    }
+    
+    .offers__header__options {
+        display: none; /* Скрываем опции на мобильных */
+    }
+    
+    .offers__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .offers__head {
+        display: none;
+    }
+
+    .offers__item,
+    .offers__item.checked {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .offers__item__info {
+        padding: 0 25px 15px 25px;
+    }
+    
+    .offers__item__info h3 {
+        font-size: 13px;
+    }
+    
+    .offer__buy__btn {
+        width: 110px;
+        height: 34px;
+        font-size: 13px;
+    }
+    
+    .offers__load-more {
+        width: 120px;
+        height: 36px;
+        font-size: 13px;
+    }
+    
+    .offers__head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .offers__head__title {
+        margin-left: 30px;
+    }
+    
+    .offers__head__title h2 {
+        font-size: 20px;
+        top: 38px;
+        left: 70px;
+    }
+    
+    .offers__head__title span {
+        font-size: 60px;
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    .offers {
+        padding: 30px 12px 0 12px;
+    }
+    
+    .offers__header__categories {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .offers__head {
+        display: none;
+    }
+
+    .offers__header__categories button {
+        height: 45px;
+        font-size: 13px;
+    }
+    
+    .offers__header__options {
+        display: none; /* Скрываем опции на мобильных */
+    }
+    
+    .offers__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .offers__item,
+    .offers__item.checked {
+        width: 280px;
+    }
+    
+    .offers__item__img {
+        height: 200px;
+    }
+    
+    .offers__item__info {
+        padding: 0 20px 12px 20px;
+    }
+    
+    .offers__item__info h3 {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .offers__item__brand {
+        font-size: 12px;
+    }
+    
+    .offers__item__availability {
+        font-size: 12px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    
+    .offers__item__price {
+        font-size: 20px;
+    }
+    
+    .offer__buy {
+        margin-top: 15px;
+    }
+    
+    .offer__buy__btn {
+        width: 100px;
+        height: 32px;
+        font-size: 12px;
+    }
+    
+    .offers__load-more {
+        width: 110px;
+        height: 34px;
+        font-size: 12px;
+    }
+    
+    .offers__head {
+        display: none;
+    }
+    
+    .offers__head__title {
+        margin-left: 25px;
+    }
+    
+    .offers__head__title h2 {
+        font-size: 18px;
+        top: 32px;
+        left: 60px;
+    }
+    
+    .offers__head__title span {
+        font-size: 50px;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) {
+    .offers {
+        padding: 25px 10px 0 10px;
+    }
+    
+    .offers__header__categories {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .offers__header__categories button {
+        height: 45px;
+        font-size: 13px;
+    }
+    
+    .offers__header__options {
+        display: none; /* Скрываем опции на мобильных */
+    }
+
+    .offers__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .offers__item,
+    .offers__item.checked {
+        width: 260px;
+    }
+    
+    .offers__item__img {
+        height: 180px;
+    }
+    
+    .offers__item__hit,
+    .offers__item__new,
+    .offers__item__stock {
+        font-size: 11px;
+        width: 90px;
+        height: 22px;
+    }
+    
+    .offers__item__info {
+        padding: 0 15px 10px 15px;
+    }
+    
+    .offers__item__info h3 {
+        font-size: 11px;
+    }
+    
+    .offers__item__brand {
+        font-size: 11px;
+    }
+    
+    .offers__item__availability {
+        font-size: 11px;
+    }
+    
+    .offers__item__price {
+        font-size: 18px;
+    }
+    
+    .offer__buy__btn {
+        width: 90px;
+        height: 30px;
+        font-size: 11px;
+    }
+    
+    .offers__load-more {
+        width: 100px;
+        height: 32px;
+        font-size: 11px;
+    }
+    
+    .offers__head__title {
+        margin-left: 20px;
+    }
+    
+    .offers__head__title h2 {
+        font-size: 16px;
+        top: 28px;
+        left: 50px;
+    }
+    
+    .offers__head__title span {
+        font-size: 45px;
+    }
+
+    .offers__head {
+        display: none;
+    }
 }

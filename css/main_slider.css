@@ -8,6 +8,7 @@
 
 .main_slider__img {
     width: 100%;
+    height: auto;
 }
 
 .main_slider .arrow {
@@ -21,6 +22,7 @@
     align-items: center;
     cursor: pointer;
     border: none;
+    z-index: 2;
 }
 
 .main_slider .arrow.right {
@@ -71,4 +73,187 @@
     height: 40px;
     border: none;
     cursor: pointer;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .main_slider__info {
+        width: 380px;
+        padding-top: 160px;
+        padding-right: 60px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .main_slider__info {
+        width: 350px;
+        padding-top: 140px;
+        padding-right: 50px;
+        padding-left: 30px;
+    }
+    
+    .main_slider__info h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    
+    .main_slider__info p {
+        font-size: 38px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .main_slider__info {
+        width: 300px;
+        padding-top: 100px;
+        padding-right: 40px;
+        padding-left: 25px;
+    }
+    
+    .main_slider__info h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    
+    .main_slider__info p {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+    
+    .main_slider__info button {
+        width: 120px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    .main_slider .arrow {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .main_slider__info {
+        width: 250px;
+        padding-top: 80px;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+    
+    .main_slider__info h2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .main_slider__info p {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .main_slider__info button {
+        width: 110px;
+        height: 34px;
+        font-size: 13px;
+    }
+    
+    .main_slider .arrow {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .main_slider .arrow img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    .main_slider__info {
+        width: 100%;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    
+    .main_slider__info h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .main_slider__info p {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .main_slider__info button {
+        width: 130px;
+        height: 38px;
+        font-size: 14px;
+    }
+    
+    .main_slider .arrow {
+        display: none; /* Скрываем стрелки на мобильных */
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    .main_slider__info {
+        padding: 25px 15px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main_slider__info h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .main_slider__info p {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .main_slider__info button {
+        width: 120px;
+        height: 36px;
+        font-size: 13px;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) {
+    .main_slider__info {
+        padding: 20px 12px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main_slider__info h2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .main_slider__info p {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+    
+    .main_slider__info button {
+        width: 110px;
+        height: 34px;
+        font-size: 12px;
+    }
 }

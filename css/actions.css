@@ -38,3 +38,139 @@
     position: absolute;
     bottom: 5px;
 }
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .actions {
+        padding: 0 60px 0 60px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .actions {
+        padding: 0 40px 0 40px;
+    }
+    
+    .actions__box {
+        gap: 25px;
+    }
+    
+    .actions__item {
+        height: 180px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .actions {
+        padding: 0 30px 0 30px;
+    }
+    
+    .actions__box {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .actions__item {
+        width: calc(33.333% - 14px);
+        height: 160px;
+    }
+    
+    .actions__item h3 {
+        font-size: 14px;
+        bottom: 3px;
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .actions {
+        padding: 0 20px 0 20px;
+    }
+    
+    .actions__box {
+        gap: 15px;
+    }
+    
+    .actions__item {
+        width: calc(33.333% - 10px);
+        height: 140px;
+        border-width: 2px;
+    }
+    
+    .actions__item h3 {
+        font-size: 12px;
+        bottom: 2px;
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    .actions {
+        padding: 0 15px 0 15px;
+    }
+    
+    .actions__box {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    
+    .actions__item {
+        width: calc(50% - 6px);
+        height: 120px;
+        border-width: 2px;
+    }
+    
+    .actions__item h3 {
+        font-size: 11px;
+        bottom: 2px;
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    .actions {
+        padding: 0 12px 0 12px;
+    }
+    
+    .actions__box {
+        gap: 10px;
+    }
+    
+    .actions__item {
+        width: calc(50% - 5px);
+        height: 110px;
+        border-width: 2px;
+    }
+    
+    .actions__item h3 {
+        font-size: 10px;
+        bottom: 1px;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) and (min-width: 320px) {
+    .actions {
+        padding: 0 10px 0 10px;
+    }
+    
+    .actions__box {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .actions__item {
+        width: 100%;
+        height: 100px;
+        border-width: 2px;
+    }
+    
+    .actions__item h3 {
+        font-size: 10px;
+        bottom: 1px;
+    }
+}

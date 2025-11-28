@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 75px;
-    border-bottom: 1px solid #6F7682
+    border-bottom: 1px solid #6F7682;
 }
 
 .header__left_block {
@@ -45,4 +45,165 @@ header {
     line-height: 100%;
     letter-spacing: 0%;
     color: #6F7682;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    header {
+        padding: 0 60px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    header {
+        padding: 0 40px;
+    }
+    
+    .header__left_block {
+        gap: 25px;
+    }
+    
+    .header__left_block nav {
+        gap: 30px;
+    }
+    
+    .header__left_block img {
+        width: 170px;
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    header {
+        padding: 0 30px;
+    }
+    
+    .header__left_block {
+        gap: 20px;
+    }
+    
+    .header__left_block nav {
+        gap: 20px;
+        font-size: 13px;
+    }
+    
+    .header__left_block img {
+        width: 150px;
+        padding: 18px 0;
+    }
+    
+    .header__right_block {
+        padding: 28px 0;
+    }
+    
+    .header__right_block img {
+        width: 25px;
+    }
+    
+    .header__right_block span {
+        font-size: 13px;
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    header {
+        padding: 0 20px;
+    }
+    
+    .header__left_block nav {
+        display: none; /* Скрываем навигацию */
+    }
+    
+    .header__left_block img {
+        width: 140px;
+        padding: 15px 0;
+    }
+    
+    .header__right_block {
+        padding: 25px 0;
+    }
+    
+    .header__right_block span {
+        display: none; /* Скрываем текст, оставляем только иконку */
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    header {
+        padding: 0 15px;
+    }
+    
+    .header__left_block nav {
+        display: none;
+    }
+    
+    .header__left_block img {
+        width: 130px;
+        padding: 12px 0;
+    }
+    
+    .header__right_block {
+        padding: 22px 0;
+    }
+    
+    .header__right_block span {
+        display: none;
+    }
+    
+    .header__right_block img {
+        width: 22px;
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    header {
+        padding: 0 12px;
+    }
+
+    .header__left_block nav {
+        display: none;
+    }
+    
+    .header__left_block img {
+        width: 120px;
+        padding: 10px 0;
+    }
+    
+    .header__right_block {
+        padding: 20px 0;
+    }
+    
+    .header__right_block img {
+        width: 20px;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) {
+    header {
+        padding: 0 10px;
+    }
+
+    .header__left_block nav {
+        display: none;
+    }
+    
+    .header__left_block img {
+        width: 110px;
+        padding: 8px 0;
+    }
+    
+    .header__right_block {
+        padding: 18px 0;
+    }
+    
+    .header__right_block img {
+        width: 18px;
+    }
 }

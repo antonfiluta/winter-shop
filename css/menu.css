@@ -100,3 +100,378 @@
     margin-top: 5px;
     margin-bottom: 1px;
 }
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .menu {
+        padding: 20px 60px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .menu {
+        padding: 20px 40px;
+    }
+    
+    .search__box {
+        margin: 0 25px;
+    }
+    
+    .search__box input {
+        width: 350px;
+    }
+    
+    .menu__right_block {
+        gap: 30px;
+    }
+}
+
+/* 900px - 1023px (большие планшеты) */
+@media (max-width: 1023px) and (min-width: 900px) {
+    .menu {
+        padding: 18px 30px;
+    }
+    
+    .menu__left_block img[alt="menu"] {
+        margin-right: 20px;
+    }
+    
+    .search__box {
+        margin: 0 20px;
+    }
+    
+    .search__box input {
+        width: 280px;
+        height: 45px;
+    }
+    
+    .search__box button {
+        width: 70px;
+        height: 45px;
+    }
+    
+    .search__box button img {
+        width: 28px;
+    }
+    
+    .recall__number {
+        font-size: 15px;
+    }
+    
+    .recall__text {
+        font-size: 13px;
+    }
+    
+    .menu__right_block {
+        gap: 25px;
+    }
+}
+
+/* 768px - 899px (планшеты) */
+@media (max-width: 899px) and (min-width: 768px) {
+    .menu {
+        padding: 15px 25px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .menu__left_block {
+        flex: 1;
+        min-width: 100%;
+        justify-content: space-between;
+    }
+    
+    .menu__left_block img[alt="menu"] {
+        margin-right: 15px;
+        width: 28px;
+    }
+    
+    .menu__left_block h2 {
+        font-size: 16px;
+    }
+    
+    .search__box {
+        margin: 0 15px;
+        flex: 1;
+    }
+    
+    .search__box input {
+        width: 100%;
+        height: 42px;
+        padding: 0 20px;
+    }
+    
+    .search__box button {
+        width: 60px;
+        height: 42px;
+    }
+    
+    .search__box button img {
+        width: 24px;
+    }
+    
+    .recall {
+        min-width: 140px;
+    }
+    
+    .menu__right_block {
+        flex: 1;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .menu {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .menu__left_block {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .menu__left_block img[alt="menu"] {
+        margin-right: 15px;
+        width: 26px;
+    }
+    
+    .menu__left_block h2 {
+        font-size: 15px;
+    }
+    
+    .search__box {
+        margin: 0 15px;
+        flex: 1;
+    }
+    
+    .search__box input {
+        width: 250px;
+        height: 40px;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+    
+    .search__box button {
+        width: 55px;
+        height: 40px;
+    }
+    
+    .search__box button img {
+        width: 22px;
+    }
+    
+    .recall {
+        min-width: 130px;
+    }
+    
+    .recall__number {
+        font-size: 14px;
+    }
+    
+    .recall__text {
+        font-size: 12px;
+    }
+    
+    .menu__right_block {
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .menu__right_block__item img {
+        width: 26px;
+    }
+    
+    .menu__right_block__item img.favorite_img {
+        width: 22px;
+    }
+    
+    .menu__right_block__item span {
+        font-size: 12px;
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    .menu {
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .menu__left_block {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .menu__left_block img[alt="menu"] {
+        margin-right: 10px;
+        width: 24px;
+    }
+    
+    .menu__left_block h2 {
+        font-size: 14px;
+        margin-right: auto;
+    }
+    
+    .search__box {
+        margin: 0;
+        order: 3;
+        flex: 1 1 100%;
+    }
+    
+    .search__box input {
+        width: 300px;
+        height: 38px;
+        padding: 0 12px;
+        font-size: 13px;
+    }
+    
+    .search__box button {
+        width: 50px;
+        height: 38px;
+    }
+    
+    .search__box button img {
+        width: 20px;
+    }
+    
+    .recall {
+        min-width: 120px;
+    }
+    
+    .recall__number {
+        font-size: 13px;
+    }
+    
+    .recall__text {
+        font-size: 11px;
+    }
+    
+    .menu__right_block {
+        gap: 25px;
+    }
+    
+    .menu__right_block__item img {
+        width: 24px;
+    }
+    
+    .menu__right_block__item img.favorite_img {
+        width: 20px;
+    }
+    
+    .menu__right_block__item span {
+        font-size: 11px;
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    .menu {
+        padding: 8px 12px;
+        gap: 10px;
+    }
+    
+    .menu__left_block img[alt="menu"] {
+        width: 22px;
+        display: none;
+    }
+    
+    .menu__left_block h2 {
+        display: none;
+    }
+    
+    .search__box {
+        display: none;
+    }
+    
+    .recall__number {
+        font-size: 12px;
+    }
+    
+    .recall__text {
+        font-size: 10px;
+    }
+    
+    .menu__right_block {
+        gap: 20px;
+    }
+    
+    .menu__right_block__item img {
+        width: 22px;
+    }
+    
+    .menu__right_block__item img.favorite_img {
+        width: 18px;
+    }
+    
+    .menu__right_block__item span {
+        font-size: 10px;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) and (min-width: 320px) {
+    .menu {
+        padding: 6px 10px;
+        gap: 8px;
+    }
+    
+    .menu__left_block img[alt="menu"] {
+        width: 20px;
+        margin-right: 8px;
+    }
+    
+    .menu__left_block h2 {
+        font-size: 12px;
+    }
+
+    .menu__left_block h2 {
+        display: none;
+    }
+    
+    .search__box {
+        display: none;
+    }
+    
+    .search__box input {
+        height: 34px;
+        padding: 0 10px;
+    }
+    
+    .search__box button {
+        width: 40px;
+        height: 34px;
+    }
+    
+    .recall {
+        min-width: 110px;
+    }
+    
+    .recall__number {
+        font-size: 11px;
+    }
+    
+    .menu__right_block {
+        gap: 15px;
+    }
+    
+    .menu__right_block__item img {
+        width: 20px;
+    }
+    
+    .menu__right_block__item img.favorite_img {
+        width: 16px;
+    }
+    
+    .menu__right_block__item span {
+        font-size: 9px;
+    }
+}

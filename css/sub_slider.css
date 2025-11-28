@@ -1,6 +1,6 @@
 .sub_slider {
     padding: 0 75px 0 75px;
-    padding-top: 130px;
+    padding-top: 80px;
     width: 100%;
 }
 
@@ -12,4 +12,103 @@
 .sub_slider__box img {
     width: calc((1440 - 150 - 30)/(2*1440) * 100vw);
     border-radius: 5px;
+}
+
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1441px - 1920px (большие экраны) */
+@media (max-width: 1920px) and (min-width: 1441px) {
+    .sub_slider {
+        padding: 0 60px 0 60px;
+        padding-top: 110px;
+    }
+}
+
+/* 1024px - 1440px (ноутбуки) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .sub_slider {
+        padding: 0 40px 0 40px;
+        padding-top: 90px;
+    }
+    
+    .sub_slider__box {
+        gap: 25px;
+    }
+    
+    .sub_slider__box img {
+        width: calc((100% - 25px) / 2);
+    }
+}
+
+/* 768px - 1023px (планшеты) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .sub_slider {
+        padding: 0 30px 0 30px;
+        padding-top: 70px;
+    }
+    
+    .sub_slider__box {
+        gap: 20px;
+    }
+    
+    .sub_slider__box img {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+/* 600px - 767px (переходный размер) */
+@media (max-width: 767px) and (min-width: 600px) {
+    .sub_slider {
+        padding: 0 20px 0 20px;
+        padding-top: 50px;
+    }
+    
+    .sub_slider__box {
+        gap: 15px;
+    }
+    
+    .sub_slider__box img {
+        width: calc((100% - 15px) / 2);
+    }
+}
+
+/* 426px - 599px (большие телефоны) */
+@media (max-width: 599px) and (min-width: 426px) {
+    .sub_slider {
+        padding: 0 15px 0 15px;
+        padding-top: 40px;
+    }
+    
+    .sub_slider__box {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .sub_slider__box img {
+        width: 100%;
+    }
+}
+
+/* 375px - 425px (средние телефоны) */
+@media (max-width: 425px) and (min-width: 375px) {
+    .sub_slider {
+        padding: 0 12px 0 12px;
+        padding-top: 30px;
+    }
+    
+    .sub_slider__box {
+        gap: 12px;
+    }
+}
+
+/* 320px - 374px (маленькие телефоны) */
+@media (max-width: 374px) and (min-width: 320px) {
+    .sub_slider {
+        padding: 0 10px 0 10px;
+        padding-top: 25px;
+    }
+    
+    .sub_slider__box {
+        gap: 10px;
+    }
 }
