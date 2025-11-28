@@ -1,0 +1,39 @@
+.switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.switcher__btn {
+    background: white;
+    border: 1px solid #F1F2F6;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+}
+
+.switcher__btn.right {
+    transform: rotate(180deg);
+}
+
+.switcher__pages_box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.switcher__pages_box span {
+    display: block;
+    width: 20px;
+    height: 7px;
+    cursor: pointer;
+    background-color: #F1F2F6;
+}
+
+.switcher__pages_box span.checked {
+    background-color: #4798DE;
+}
